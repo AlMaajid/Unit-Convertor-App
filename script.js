@@ -5,7 +5,9 @@ const feetEl = document.getElementById('feet-el');
 const literEl = document.getElementById('liter-el');
 const gallonEl = document.getElementById('gallon-el');
 const kiloEl = document.getElementById('kilo-el');
-const poundEl = document.getElementById('pound-el')
+const poundEl = document.getElementById('pound-el');
+const hourEl = document.getElementById('hour-el');
+const dayEl = document.getElementById('day-el');
 
 
 convertBtn.addEventListener('click', function () {
@@ -18,6 +20,9 @@ convertBtn.addEventListener('click', function () {
   kiloEl.textContent = `${inputEl.value} Kilos = ${(inputEl.value * 2.205
   ).toFixed(3)} Pounds`
   poundEl.textContent = `${inputEl.value} Pounds = ${(inputEl.value / 2.205).toFixed(3)} Kilos`
+  hourEl.textContent = `${inputEl.value} Hours  = ${(inputEl.value / 24).toFixed(0)} Days`;
+  dayEl.textContent = `${inputEl.value} Days = ${(inputEl.value * 24
+  ).toFixed(0)} Hours`
   inputEl.value = ''
 })
 

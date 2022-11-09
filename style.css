@@ -90,7 +90,9 @@ button{
 #liter-el,
 #gallon-el,
 #kilo-el,
-#pound-el{
+#pound-el,
+#hour-el,
+#day-el{
   font-size: 1.25rem;
   margin-right: 1rem;
   text-align: center;
