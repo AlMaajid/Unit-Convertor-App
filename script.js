@@ -20,9 +20,9 @@ convertBtn.addEventListener('click', function () {
   kiloEl.textContent = `${inputEl.value} Kilos = ${(inputEl.value * 2.205
   ).toFixed(3)} Pounds`
   poundEl.textContent = `${inputEl.value} Pounds = ${(inputEl.value / 2.205).toFixed(3)} Kilos`
-  hourEl.textContent = `${inputEl.value} Hours  = ${(inputEl.value / 24).toFixed(0)} Days`;
+  hourEl.textContent = `${inputEl.value} Hours  = ${(inputEl.value / 24).toFixed(1)} Days`;
   dayEl.textContent = `${inputEl.value} Days = ${(inputEl.value * 24
-  ).toFixed(0)} Hours`
+  ).toFixed(1)} Hours`
   inputEl.value = ''
 })
 
