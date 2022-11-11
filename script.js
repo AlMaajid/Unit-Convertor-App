@@ -11,7 +11,7 @@ const dayEl = document.getElementById('day-el');
 
 
 convertBtn.addEventListener('click', function () {
-  const input = parseInt(inputEl.value);
+  const input = inputEl.value;
   if (input != 0) {
     meterEl.textContent = `${inputEl.value} Meters = ${(inputEl.value * 3.281).toFixed(3)} Feet`;
     feetEl.textContent = `${inputEl.value} Feet = ${(inputEl.value * 0.3048).toFixed(3)} Meters`;
